@@ -1,0 +1,875 @@
+/*=== MEDIA QUERY ===*/
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Themefisher
+Template Name: Promodise
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HOMEPAGE CSS STYLE
+    -LOGO CSS
+    -MENU CSS
+* 04.ABOUT CSS STYLE
+* 05.SERVICE CSS STYLE
+* 06.WORK CSS STYLE
+* 07.AVAILABLE CSS STYLE
+* 08.CONTACT CSS STYLE
+* 09.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Semibold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato-Light.ttf");
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Lato-Light", sans-serif;
+  color: black;
+  position: relative;
+}
+
+p {
+  line-height: 28px;
+  font-size: 18px;
+  font-family: Lato-Light;
+}
+
+html {
+  overflow-x: hidden !important;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: #232323;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-li {
+  margin: 0;
+  padding: 0;
+  list-style: circle;
+}
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-family: Raleway-Semibold;
+  font-size: 40px;
+  color: #18465A;
+  padding-bottom: 18px;
+
+}
+
+h3 {
+  font-family: Raleway-Semibold;
+  font-size: 28px;
+  color: #60935D;
+}
+
+h4 {
+  font-size: 60px;
+  font-family: Raleway-Semibold;
+  line-height: 80px;
+  
+}
+
+h5 {
+  text-transform: lowercase;
+  font-family: Raleway-Medium;
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+th {
+  font-family: Raleway-Semibold;
+  font-size: 20px;
+  color: #fff;
+}
+
+td {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: Lato-Light;
+}
+
+
+h5.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.flaticon {
+  display: inline;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.section-padding {
+  padding: 110px 0px;
+}
+
+.section-padding-2 {
+  padding: 110px 0px 50px 0px;
+}
+
+.footer-section-padding {
+  padding: 30px 0px;
+}
+.section-heading {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto 60px;
+}
+
+.section-title {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.section {
+  padding: 100px 0px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+
+
+
+/*---------- COLORS ----------*/
+/*-- Background Colors --*/
+.bg-black {
+  background-color: #000;
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.d-table {
+  width: 100%;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.heading h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/*------------------------------------
+  MENU NAVIGATION AREA
+----------------------------------*/
+.site-navigation,
+.trans-navigation {
+  padding: 20px 0px;
+}
+
+.site-navigation .navbar-nav a,
+.trans-navigation .navbar-nav a {
+  text-transform: lowercase;
+  font-family: Raleway-Medium;
+  font-size: 18px;
+}
+
+.site-navigation .navbar-nav a.active,
+.trans-navigation .navbar-nav a.active {
+  color: red;
+}
+
+.header-white {
+  position: fixed;
+  top: 0px;
+  background: #fff;
+  z-index: 9999;
+  width: 100%;
+  left: 0;
+  transition: all .5s ease 0s;
+  color: #000 !important;
+}
+
+.navbar-expand-lg.trans-navigation .navbar-nav .nav-link,
+.navbar-expand-lg.site-navigation .navbar-nav .nav-link {
+  padding: 0px 24px;
+}
+
+.navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
+.navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
+  padding-right: 0px;
+}
+
+.site-navigation,
+.trans-navigation {
+  transition: all .5s ease 0s;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+  margin-right: 60px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.navbar-brand span {
+  font-weight: 400;
+}
+
+.navbar-expand-lg.trans-navigation .navbar-nav .nav-link {
+  color: #000;
+}
+
+.trans-navigation {
+  background: transparent;
+}
+
+.trans-navigation.header-white {
+  background: #9ec1d7;
+}
+
+.trans-navigation.header-white .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.trans-navigation.header-white .navbar-nav a.active {
+  color: #9ec1d7;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+}
+
+.trans-navigation.header-white .btn-white {
+  background: #9ec1d7;
+  color: #fff;
+}
+
+/* ===============================
+ DROPDOWN MENU
+================================*/
+.navbar-expand-lg.trans-navigation .navbar-nav .nav-link.dropdown-toggle {
+  padding-right: 0px;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  transition: all 300ms ease;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  top: 120%;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+  border: 0px;
+  padding: 0px;
+  position: absolute;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #9ec1d7;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  opacity: 0;
+}
+
+.dropdown-menu.show {
+  -webkit-animation: .2s forwards b;
+          animation: .2s forwards b;
+}
+
+@-webkit-keyframes b {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes b {
+  to {
+    opacity: 1;
+  }
+}
+
+.dropdown-item {
+  font-size: .6875rem;
+  font-weight: 500;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  transition: background-color .1s;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .dropdown-item {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-item + .dropdown-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+/*------------------------------------
+ BANNER AREA
+----------------------------------*/
+.banner-area .content-padding {
+  padding: 200px 0px 200px;
+}
+
+.banner-area-1 .content-padding {
+  padding: 200px 0px 200px;
+}
+
+.banner-area-2 .content-padding {
+  padding: 150px 0px 150px;
+}
+
+.content-padding {
+  padding: 300px 0px 80px;
+}
+
+.banner-content {
+  padding-right: 30px;
+}
+
+.banner-content .btn {
+  margin-top: 15px;
+}
+
+.banner-content-1 .banner-title {
+  color: #fff;
+  font-weight: 20px;
+  line-height: 30px;
+  padding-top: 35px;
+  padding-bottom: 75px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content .banner-title {
+  color: #fff;
+  font-weight: 700;
+  line-height: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.banner-content p {
+  margin: 20px 0px;
+  color: #eee;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.banner-content .btn {
+  margin-right: 12px;
+}
+
+.btn-sm {
+  padding: 10px 30px;
+}
+
+.banner-1 {
+  background: url("../images/japan-rec-header.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.banner-2 {
+  background: url("../images/japan-photo/walter-mario-stein-kqfE9mvv7Xw-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.banner-3 {
+  background: url("../images/home/homebkgd.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.section-heading h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.service-box .service-img-icon {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background: #fff;
+  padding-top: 20px;
+  margin: 0 auto;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  background: #635CDB;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.service-box {
+  margin-bottom: 40px;
+  background: #fff;
+  text-align: center;
+  padding: 45px 25px 30px 25px;
+  border: 1px solid transparent;
+  transition: all .3s ease 0s;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-inner {
+  margin-top: 30px;
+}
+
+.service-inner h4 {
+  margin-bottom: 20px;
+}
+
+.service-block-2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-block-2 h4 {
+  margin-bottom: 15px;
+  line-height: 26px;
+}
+
+.service-block-2 p {
+  font-size: 16px;
+}
+
+.service-block-2 span {
+  position: absolute;
+  content: "";
+  font-size: 70px;
+  top: 0px;
+  left: 0px;
+  font-weight: 800;
+  opacity: .05;
+  margin-top: -15px;
+}
+
+.service-style-two {
+  background: url("../images/bg/bg-2.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.service-style-two:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.heading {
+  margin-bottom: 70px;
+}
+/* =======================================
+INner Pages
+=========================================*/
+#page-banner {
+  position: relative;
+  padding: 60px 0px 80px;
+}
+
+.page-banner-area {
+  background: url("../images/japan-rec/japan-recs.jpg");
+  background-size: cover;
+  position: relative;
+  max-height: 50%;
+}
+
+/*-------------------- ------------
+ INTRO SECTION
+-----------------------------*/
+#intro {
+  padding-bottom: 0px;
+}
+
+.intro-img {
+  margin-top: 45px;
+}
+
+#intro .section-heading p {
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.intro-box {
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.intro-box h4:before {
+  position: absolute;
+  left: 0px;
+  top: 17px;
+  content: "";
+  bottom: 0px;
+  background: #000;
+  width: 50px;
+  height: 2px;
+}
+
+.intro-box h4 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.intro-box span {
+  font-size: 28px;
+  color: #635CDB;
+}
+
+.intro-cta {
+  margin-top: 40px;
+}
+
+
+/*--------------------------
+ FOOTER
+----------------------*/
+#footer {
+  padding-bottom: 20px;
+  position: relative;
+  background-color: #18465A;
+}
+
+.footer-widget p {
+  margin-bottom: 5px;
+}
+
+.footer-copy {
+  letter-spacing: 1px;
+  padding-top: 10px;
+  color: #fff;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+.footer-text h6 {
+  margin-bottom: 10px;
+}
+
+.footer-text p span {
+  color: #fff;
+}
+
+
+.footer-widget a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+/*-------------------------------
+ RESPONSIVE LAYOUT
+---------------------------------*/
+/*Extra large devices (large desktops, 1200px and up)*/
+/*Large devices (desktops, 992px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*---------------
+     NAVIGATION
+    ----------------*/
+  .navbar-toggler {
+    background: #fff;
+    border-radius: 0px;
+  }
+  .navbar-toggler-icon {
+    height: auto;
+    padding: 10px 0px;
+  }
+  .trans-navigation {
+    background: #fff;
+  }
+  .navbar-expand-lg.trans-navigation .navbar-nav .nav-link {
+    margin-bottom: 10px;
+  }
+  /*----------------------
+     SECTION HEAINDG
+    -----------------------*/
+  .section-heading {
+    width: 100%;
+  }
+  /*----------------
+     INTRO
+    ----------------*/
+  #intro {
+    padding-bottom: 90px;
+  }
+
+  /*--------------
+     FOOTER
+    ----------------*/
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*---------------
+     NAVIGATION
+    ----------------*/
+  .navbar-toggler {
+    background: #fff;
+    border-radius: 0px;
+  }
+  .navbar-toggler-icon {
+    height: auto;
+    padding: 10px 0px;
+  }
+  .trans-navigation {
+    background: #fff;
+  }
+  .navbar-expand-lg.trans-navigation .navbar-nav .nav-link {
+    margin-bottom: 10px;
+  }
+  /*----------------------
+     SECTION HEAINDG
+    -----------------------*/
+  .section-heading {
+    width: 100%;
+  }
+  /*----------------
+     INTRO
+    ----------------*/
+  #intro {
+    padding-bottom: 90px;
+  }
+  /*----------------
+     ABOUT
+    ----------------*/
+  .about-content {
+    margin-top: 60px;
+  }
+  #about {
+    padding-bottom: 40px;
+  }
+
+  /*--------------
+     FOOTER
+    ----------------*/
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  .pricing-block {
+    margin-bottom: 30px;
+  }
+  .img-block img {
+    width: 130px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  /*---------------
+     NAVIGATION
+    ----------------*/
+  .navbar-toggler {
+    background: #fff;
+    border-radius: 0px;
+  }
+  .navbar-toggler-icon {
+    height: auto;
+    padding: 10px 0px;
+  }
+  .trans-navigation {
+    background: #fff;
+    padding: 20px 15px;
+  }
+  .navbar-expand-lg.trans-navigation .navbar-nav .nav-link {
+    margin-bottom: 10px;
+  }
+  /*----------------------
+     SECTION HEAINDG
+    -----------------------*/
+  #intro .section-heading, .section-heading {
+    width: 100%;
+  }
+  #intro .section-heading p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .section-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  /*--------------------
+     BANNER
+    -----------------*/
+  .banner-content .banner-title {
+    line-height: 75px;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  /*----------------
+     INTRO
+    ----------------*/
+  #intro {
+    padding-bottom: 90px;
+  }
+
+  /*--------------
+     BLOG
+    ----------------*/
+  .blog-block {
+    margin-bottom: 30px;
+  }
+  .blog-text {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .blog-tex h5 {
+    font-size: 15px;
+  }
+  .blog-text p {
+    font-size: 14px;
+  }
+
+  /*--------------
+     FOOTER
+    ----------------*/
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  .pricing-block {
+    margin-bottom: 30px;
+  }
+}
+

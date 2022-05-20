@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <title>CoxSista Adventures - About </title>
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <!-- Icofont Css -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- Icofont -->
+    <link rel="stylesheet" href="plugins/icofont/icofont.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+
+    <nav class="navbar navbar-expand-lg fixed-top trans-navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/coxsistalogo-08.png" alt="" class="img-fluid b-logo" style="height: 75px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+              </button>
+    
+              <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav ">
+                   <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            destinations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarWelcome">
+                            <a class="dropdown-item " href="japan.html">
+                                Japan
+                            </a>
+                            <a class="dropdown-item " href="japan-photos.html">
+                                Japan Photo Diary
+                            </a> 
+                            <a class="dropdown-item " href="japan-recs.html" target="blank">
+                                Japan Recommendations
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll" href="reasources-2.html">resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll" href="about.html">about</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--MAIN HEADER AREA END -->
+
+ <!--  Main Area  -->
+<section id="intro" class="section-padding" style="margin-left: 25%; margin-right: 25%;">
+    <div class="container">
+        <div class="row" style="padding-top:50px;">
+                <div class="mb-5" >
+                    <h2>Welcome To CoxSista Adventures</h2>
+                    <p>Wondering who the heck we are? Hello 👋 we're Cameron and Kelsey, two sisters who love to travel. We've been traveling together for awhile...over 30 years...but it wasn't until 2016 when CoxSista Adventures was born.</p>
+                    <p>It all started with a wedding invitation. In 2016 Kelsey began to plan to attend her friend Antonia's wedding in Glasgow, Scotland, and to take some time to explore more of Scotland while there. Research done, plane tickets booked, Cameron started to count her vacation days and wondered if she should be booking tickets too. About three weeks before the departure date, she did, making the trip the first of the CoxSista Adventures. Since then, we've gone on many adventures together, from Thailand and Japan to places a little closer to home, like Hawaii. </p>
+                </div>
+                <div clss="mb-5">
+                    <p><img style="float: left; max-width: 200px; padding-right: 15px; padding-bottom: 10px;" 
+                        src="./images/about/sistaspng-10.png" alt="Cameron" /></p>
+                    <h3>Who's Cameron?</h3>
+                    <p>Cameron is Interior Designer by trade and passionate about good food, art, and exploring new places. She's the elder of our sister duo who's always down to go out and do something. You'll often find her taking strolls with her Goldendoodle Mackie, binging a new show, and asking: "who designed this?" when confronted with questionable designs. </p>
+                </div>
+                <div clss="mb-5">
+                    <p><img style="float: right; max-width: 200px; padding-left: 15px; padding-bottom: 10px;" 
+                        src="./images/about/sistaspng-09.png" alt="Cameron" /></p>
+                    <h3 style="text-align:right;">Who's Kelsey?</h3>
+                    <p style="text-align:right;">Kelsey is a boba-obsessed, doting dog aunt who loves to explore new restaurants, bookstores, museums, and craft fairs. You'll often find her curled up with a good book, in the kitchen tackling new baking projects during her free time, and creating extensive matrixes while planning the next trip!  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our travels" style="margin-left: 25%; margin-right: 25%;">
+        <div class="container">
+            <div class="row" style="padding-top:10px;">
+                    <div class="mb-5" style="margin-left: auto;margin-right: auto;">
+                    <h2 style="text-align: center;">Our Travels</h2>
+                    </div>
+            </div>
+        </div>
+    </section>
+<section id="wherebeen" style="margin-left: auto;margin-right: auto;">
+    <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+    <div id="mapdiv" style="width: 85%; height: 450px;align-items: center;margin-left: auto;margin-right: auto;"></div>
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv",{
+type: "map",
+theme: "dark",
+projection: "mercator",
+panEventsEnabled : true,
+backgroundColor : "#ffffff",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : true
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "FR",
+		"showAsSelected": true
+	},
+	{
+		"id": "GR",
+		"showAsSelected": true
+	},
+	{
+		"id": "IT",
+		"showAsSelected": true
+	},
+	{
+		"id": "NL",
+		"showAsSelected": true
+	},
+	{
+		"id": "ES",
+		"showAsSelected": true
+	},
+	{
+		"id": "TR",
+		"showAsSelected": true
+	},
+	{
+		"id": "GB",
+		"showAsSelected": true
+	},
+	{
+		"id": "VA",
+		"showAsSelected": true
+	},
+	{
+		"id": "VG",
+		"showAsSelected": true
+	},
+	{
+		"id": "CA",
+		"showAsSelected": true
+	},
+	{
+		"id": "MX",
+		"showAsSelected": true
+	},
+	{
+		"id": "US",
+		"showAsSelected": true
+	},
+	{
+		"id": "ZA",
+		"showAsSelected": true
+	},
+	{
+		"id": "ZM",
+		"showAsSelected": true
+	},
+	{
+		"id": "KH",
+		"showAsSelected": true
+	},
+	{
+		"id": "CN",
+		"showAsSelected": true
+	},
+	{
+		"id": "HK",
+		"showAsSelected": true
+	},
+	{
+		"id": "IN",
+		"showAsSelected": true
+	},
+	{
+		"id": "JP",
+		"showAsSelected": true
+	},
+	{
+		"id": "TW",
+		"showAsSelected": true
+	},
+	{
+		"id": "TH",
+		"showAsSelected": true
+	},
+	{
+		"id": "VN",
+		"showAsSelected": true
+	},
+	{
+		"id": "AU",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#e2e2e2",
+colorSolid : "#88ab75",
+selectedColor : "#88ab75",
+outlineColor : "#666666",
+rollOverColor : "#a4c0d5",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+                </div>
+    </section>
+
+<section id="intro" style="margin-left: 25%; margin-right: 25%;padding-top: 25px;padding-bottom: 40px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="service-box-2" style="padding-bottom: 20px;">
+                    <h2 style="font-size:28px;text-align: center;padding-bottom: 15px;">Where We've Been</h2>
+                    <div class="container justify-content-center">
+                        <div class="row justify-content-center">
+                            <div class="row justify-content-center" style="padding-right:35px;">
+                            <div class="col">
+                                <ul>
+                                    <li class="about-li">England</li>
+                                    <li class="about-li">Scotland</li>
+                                    <li class="about-li">France</li>
+                                    <li class="about-li">Netherlands</li>
+                                    <li class="about-li">Italy</li>
+                                    <li class="about-li">Spain</li>
+                                    <li class="about-li">Australia</li>
+                                    <li class="about-li">South Africa</li>
+                                </ul>
+                            </div>
+                        </div>
+                            <div class="row justify-content-center" style="padding-left: 35px;">
+                            <div class="col">
+                                <ul>
+                                    <li class="about-li">Greece</li>
+                                    <li class="about-li">Turkey</li>
+                                    <li class="about-li">China</li>
+                                    <li class="about-li">India</li>
+                                    <li class="about-li">Japan</li>
+                                    <li class="about-li">Thailand</li>
+                                    <li class="about-li">Vietnam</li>
+                                    <li class="about-li">Zambia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-box-2">
+                    <h2 style="font-size:28px;text-align: center;padding-bottom: 15px;">Our Bucket List</h2>
+                    <div class="container justify-content-center">
+                        <div class="row justify-content-center">
+                            <div class="row justify-content-center" style="padding-right:35px;">
+                            <div class="col">
+                                <ul>
+                                    <li class="about-li">Morocco</li>
+                                    <li class="about-li">Croatia</li>
+                                    <li class="about-li">Peru</li>
+                                    <li class="about-li">Costa Rica</li>
+                                    <li class="about-li">New Zeland</li>
+                                    <li class="about-li">Germany</li>
+                                </ul>
+                            </div>
+                        </div>
+                            <div class="row justify-content-center" style="padding-left: 35px;">
+                            <div class="col">
+                                <ul>
+                                    <li class="about-li">Bhutan</li>
+                                    <li class="about-li">Portugal</li>
+                                    <li class="about-li">Ireland</li>
+                                    <li class="about-li">Brazil</li>
+                                    <li class="about-li">Denmark</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+
+        </div>
+    </div>
+</section>
+<!--  PMain END  -->
+
+<!--  FOOTER AREA  -->
+<section id="footer" class="footer-section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="footer-widget footer-link">
+                    <h5 style="color: white;"><a href="index.html">Home &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><a href = "mailto: abc@example.com">contact &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><a href="#top"><img src="./images/up-arrow-14.png" alt="" style="height: 18px;padding-right: 5px;"></a></h5>
+                </div>
+            </div>
+            <div class="col" style="padding-bottom: 5px;">
+                <div class="footer-widget footer-link" style="float: right;">
+                    <a href="https://www.instagram.com/kelc244/" target="_blank">
+                        <img src="./images/IG2.png" alt="" style="height: 25px;padding-right: 5px;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kelseyccox" target="_blank">
+                        <img src="./images/linkedin.png" alt="" style="height: 25px;padding-right: 5px;">
+                    </a>
+                    <a href="https://pin.it/6dI8CaZ" target="_blank">
+                        <img src="./images/pin.png" alt="" style="height: 25px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="footer-copy">
+                    © 2022 CoxSista Adventures
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  FOOTER AREA END  -->
+</body>
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4.3.1 -->
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+   <!-- Woow animtaion -->
+    <script src="plugins/counterup/wow.min.js"></script>
+    <script src="plugins/counterup/jquery.easing.1.3.js"></script>
+     <!-- Counterup -->
+    <script src="plugins/counterup/jquery.waypoints.js"></script>
+    <script src="plugins/counterup/jquery.counterup.min.js"></script>
+
+    <!-- Google Map -->
+    <script src="plugins/google-map/gmap3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>   
+    <!-- Contact Form -->
+    <script src="plugins/jquery/contact.js"></script>
+    <script src="js/custom.js"></script>
+
+
+  </html>
